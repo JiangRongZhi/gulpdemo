@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <script>
+        ! function (e, t) {
+            function n() {
+                t.body ? t.body.style.fontSize = 12 * o + "px" : t.addEventListener("DOMContentLoaded", n)
+            }
+
+            function d() {
+                var e = i.clientWidth / 10;
+                i.style.fontSize = e + "px"
+            }
+            var i = t.documentElement,
+                o = e.devicePixelRatio || 1;
+            if (n(), d(), e.addEventListener("resize", d), e.addEventListener("pageshow", function (e) {
+                    e.persisted && d()
+                }), o >= 2) {
+                var a = t.createElement("body"),
+                    s = t.createElement("div");
+                s.style.border = ".5px solid transparent", a.appendChild(s), i.appendChild(a), 1 === s.offsetHeight && i.classList
+                    .add("hairlines"), i.removeChild(a)
+            }
+        }(window, document);
+        var App = {};
+    </script>
+    <title>Hello Word!</title>
+    <link rel="stylesheet" type="text/css" href="./static/styles/app.min.css">
+    <script src="./static/scripts/vendor.min.js"></script>
+    <script src="./static/scripts/app.min.js"></script>
+</head>
+
+<body>
+    <article class="container">
+        <!-- <section class="loading">
+            <div class="loading-anim"><img src="./static/images/loading.svg" alt=""></div>
+            <div class="loading-plan"><span>1</span>%</div>
+        </section>
+        <a href="javascript:;" class="music-icon active"></a>
+        <section class="landscape"></section>
+        <div class="abc"></div> -->
+        <div class="app"></div>
+    </article>
+</body>
+
+</html>
